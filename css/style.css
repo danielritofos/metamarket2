@@ -184,10 +184,10 @@ h2 span{
 	position: relative;
 }
 .map > div::after{
-	content: url(../maparrow.svg);
+	content: url(../img/maparrow.svg);
 	position: absolute;
 	top: calc(50% - 15px);
-	right: 0;
+	right: 8px;
 }
 
 @media (max-width: 1400px){
