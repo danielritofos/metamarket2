@@ -140,10 +140,9 @@ h2 span{
 	width: 1px;
 }
 .sources .window::after{
-	content: url("../img/vector.svg");
-	transform: rotate(180deg);
+	content: url("../img/vector2.svg");
 	position: absolute;
-	bottom: -77px;
+	bottom: -28px;
 	left: 50%;
 	/*height: 60px;*/
 	width: 1px;
@@ -163,8 +162,8 @@ h2 span{
 .sources .row::after{
 	content: '';
 	position: absolute;
-	bottom: -72px;
-	left: calc(12.5% - 5px);
+	bottom: -16px;
+	left: calc(12.5% + 5px);
 	width: 75%;
 	height: 0;
 	border-bottom: 2px solid #D600E2;
