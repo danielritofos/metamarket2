@@ -1,0 +1,218 @@
+@font-face {  
+    font-family: 'Gamero';
+    src: url('../fonts/Gamero.ttf') format('truetype'); 
+}
+*{
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+html{
+	font-size: 18px;
+}
+body{
+	color: #ffffff;
+	font-family: "Nunito", sans-serif;
+	background-color: #010101;
+}
+.first{
+	background-image: url(../img/first.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+nav{
+	background: radial-gradient(152.2% 256.6% at -5.92% 107.49%, rgba(127, 127, 127, 0.41) 0%, rgba(127, 127, 127, 0) 88.46%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+	backdrop-filter: blur(15px);
+	border-radius: 16px;
+	padding: 30px 0;
+}
+a{
+	color: #ffffff;
+	font-family: "Nunito", sans-serif;
+	font-size: 18px;
+	text-decoration: none;
+}
+nav a{
+	border-right: 1px solid #ffffff;
+	padding: 0px 30px;
+}
+nav a:last-child{
+	border-right: none;
+}
+h2, h3, h4{
+	font-style: italic;
+	text-transform: uppercase;
+}
+h2 span{
+	font-family: "Gamero";
+}
+.description{
+	font-size: 24px;
+}
+.btn{
+	color: #ffffff;
+	background: linear-gradient(130.39deg, rgba(186, 187, 180, 0.63) -6.69%, #BABBB4 -6.68%, rgba(20, 20, 20, 0.04) 53.64%, #E2DAE2 102.69%);
+	backdrop-filter: blur(11px);
+}
+.btn:hover{
+	color: #ffffff;
+	background: linear-gradient(130.39deg, rgba(181, 226, 0, 0.63) -6.69%, #B5E200 -6.68%, rgba(20, 20, 20, 0.04) 53.64%, #D600E2 102.69%);
+	backdrop-filter: blur(11px);
+}
+.window{
+	background: linear-gradient(104.3deg, rgba(163, 163, 163, 0) 15.4%, rgba(254, 255, 249, 0.2) 100.92%);
+	border: 1px solid #7F7F7F;
+	box-sizing: border-box;
+	backdrop-filter: blur(94px);
+	position: relative;
+}
+.window-leftlight{
+	background: radial-gradient(152.2% 256.6% at -5.92% 107.49%, rgba(127, 127, 127, 0.41) 0%, rgba(127, 127, 127, 0) 88.46%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+	backdrop-filter: blur(11px);
+}
+.welcome .window::after{
+	content: 'Airdrop';
+	color: #B5E200;
+	text-transform: uppercase;
+	font-family: 'Gamero';
+	position: absolute;
+	font-size: 36px;
+	line-height: 36px;
+	top: -18px;
+	left: 72px;
+	background-color: #010101;
+	padding: 0 18px;
+}
+.list > div span{
+	font-family: 'Gamero';
+	position: relative;
+}
+.list > div span::before{
+	position: absolute;
+	left: -10px;
+	bottom: 18px;
+	height: 36px;
+	width: 36px;
+}
+.launch .list > div:nth-child(1) span::before{
+	content: url("../img/li1.svg");
+}
+.launch .list > div:nth-child(2) span::before{
+	content: url("../img/li2.svg");
+}
+.launch .list > div:nth-child(3) span::before{
+	content: url("../img/li3.svg");
+}
+.estate .list > div:nth-child(1) span::before{
+	content: url("../img/li11.svg");
+}
+.estate .list > div:nth-child(2) span::before{
+	content: url("../img/li12.svg");
+}
+.school .list > div:nth-child(1) span::before{
+	content: url("../img/li21.svg");
+}
+.school .list > div:nth-child(2) span::before{
+	content: url("../img/li22.svg");
+}
+.school .list > div:nth-child(3) span::before{
+	content: url("../img/li23.svg");
+}
+
+.crowd .window p{
+	position: relative;
+}
+.crowd .window p::before{
+	content: url("../img/windowarrow.svg");
+	position: absolute;
+	top: calc(50% - 23px);
+	left: 0;
+}
+.stock h2 span, .sources h2 span{
+	font-family: "Nunito", sans-serif;
+}
+.sources .window::before{
+	content: url("../img/vector.svg");
+	position: absolute;
+	top: -77px;
+	left: 50%;
+	/*height: 60px;*/
+	width: 1px;
+}
+.sources .window::after{
+	content: url("../img/vector.svg");
+	transform: rotate(180deg);
+	position: absolute;
+	bottom: -77px;
+	left: 50%;
+	/*height: 60px;*/
+	width: 1px;
+}
+.sources .sources-row{
+	position: relative;
+}
+.sources .sources-row::before{
+	content: '';
+	position: absolute;
+	top: -72px;
+	left: calc(12.5% + 5px);
+	width: 75%;
+	height: 0;
+	border-top: 2px solid #D600E2;
+}
+.sources .row::after{
+	content: '';
+	position: absolute;
+	bottom: -72px;
+	left: calc(12.5% - 5px);
+	width: 75%;
+	height: 0;
+	border-bottom: 2px solid #D600E2;
+}
+
+.map::-webkit-scrollbar {
+	width: 3px;
+	background-color: #B5E299;
+}
+.map::-webkit-scrollbar-thumb {
+    background-color: #010101;
+    border-radius: 6px;
+}
+.map > div{
+	position: relative;
+}
+.map > div::after{
+	content: url(../maparrow.svg);
+	position: absolute;
+	top: calc(50% - 15px);
+	right: 0;
+}
+
+@media (max-width: 1400px){
+	.sources .window::before{
+		display: none;
+	}
+	.sources .window::after{
+		display: none;
+	}
+	.sources .row::before{
+		display: none;
+	}
+	.sources .row::after{
+		display: none;
+	}
+}
+
+@media (max-width: 992px){
+	nav a{
+		border-right: none;
+	}
+}
+
+@media (max-width: 576px){
+	.brlg{
+		display: none;
+	}
+}
