@@ -91,10 +91,8 @@ h2 span{
 }
 .list > div span::before{
 	position: absolute;
-	left: -10px;
-	bottom: 18px;
-	height: 36px;
-	width: 36px;
+	left: -9px;
+	bottom: -18px;
 }
 .launch .list > div:nth-child(1) span::before{
 	content: url("../img/li1.svg");
@@ -128,7 +126,7 @@ h2 span{
 	content: url("../img/windowarrow.svg");
 	position: absolute;
 	top: calc(50% - 23px);
-	left: 0;
+	left: -18px;
 }
 .stock h2 span, .sources h2 span{
 	font-family: "Nunito", sans-serif;
@@ -188,6 +186,9 @@ h2 span{
 	position: absolute;
 	top: calc(50% - 15px);
 	right: 8px;
+}
+footer, footer a{
+	font-size: 12px;
 }
 
 @media (max-width: 1400px){
