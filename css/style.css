@@ -300,6 +300,9 @@ footer, footer a{
 	overflow: hidden;
 	z-index: 1;
 }
+section{
+	overflow-x: hidden;
+}
 .metamarket .tower::after{
 	content: url(../img/towerlight_metamarket1.svg);
 	bottom: 0;
@@ -309,29 +312,27 @@ footer, footer a{
 	content: url(../img/towerlight_metamarket2.svg);
 	bottom: -50%;
 	right: 0;
-	animation-duration: 2.5s;
+	animation-duration: 1.5s;
 }
 .launch .tower::after{
 	content: url(../img/towerlight_metamarket2.svg);
 	top: 0;
 	left: 0;
-	width: 300px;
 }
 .launch .tower::before{
 	content: url(../img/towerlight_launch2.svg);
 	bottom: 15%;
 	left: 0;
-	animation-duration: 2.5s;
-	width: 300px;
+	animation-duration: 1.5s;
 }
 .crowd .tower::after{
 	content: url(../img/towerlight_crowd.svg);
-	bottom: 30%;
+	bottom: 0;
 	right: 0;
 }
 .estate .tower::after{
 	content: url(../img/towerlight_estate.svg);
-	bottom: 0;
+	top: 0;
 	right: 0;
 }
 .school .tower::after{
