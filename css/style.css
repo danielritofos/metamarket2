@@ -27,15 +27,13 @@ body{
 	padding: 0;
 }
 nav{
-	background: radial-gradient(152.2% 256.6% at -5.92% 107.49%, rgba(127, 127, 127, 0.41) 0%, rgba(127, 127, 127, 0) 88.46%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+	background: radial-gradient(152.2% 256.6% at -5.92% 107.49%, rgba(127, 127, 127, 0.41) 0%, rgba(127, 127, 127, 0) 88.46%);
 	backdrop-filter: blur(15px);
 	border-radius: 16px;
 	padding: 30px 0;
 }
 a{
 	color: #ffffff;
-	font-family: "Nunito", sans-serif;
-	font-size: 18px;
 	text-decoration: none;
 }
 nav a{
@@ -45,25 +43,16 @@ nav a{
 nav a:last-child{
 	border-right: none;
 }
-nav a:hover, footer a:hover{
+a:not(.btn):hover{
 	color: #B5E200;
 }
 h2, h3, h4{
 	font-style: italic;
 	text-transform: uppercase;
-	font-weight: 300;
 }
 h2 span{
 	font-family: "Gamero";
-	font-weight: 400;
-}
-.welcome h2 span,
-.metamarket h2 span,
-.launch h2 span,
-.crowd h2 span,
-.estate h2 span,
-.school h2 span{
-	font-style: normal;
+	white-space: nowrap;
 }
 .description{
 	font-size: 24px;
@@ -105,6 +94,8 @@ h2 span{
 .list > div span{
 	font-family: 'Gamero';
 	position: relative;
+	display: inline-block;
+	width: 50px;
 }
 .list > div span::before{
 	position: absolute;
@@ -136,7 +127,6 @@ h2 span{
 .school .list > div:nth-child(3) span::before{
 	content: url("../img/li23.svg");
 }
-
 .crowd .window p{
 	position: relative;
 }
@@ -148,6 +138,7 @@ h2 span{
 }
 .stock h2 span, .sources h2 span{
 	font-family: "Nunito", sans-serif;
+	white-space: initial;
 }
 .sources .window span{
 	width: 60px;
@@ -187,7 +178,6 @@ h2 span{
 	height: 0;
 	border-bottom: 2px solid #D600E2;
 }*/
-
 .map::-webkit-scrollbar {
 	background-color: #B5E299;
 }
@@ -213,7 +203,6 @@ h2 span{
 	text-transform: uppercase;
 	font-family: "Gamero";
 	color: #00E23F;
-
 	background: radial-gradient(152.2% 256.6% at -5.92% 107.49%, rgba(127, 127, 127, 0.41) 0%, rgba(127, 127, 127, 0) 88.46%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
 	backdrop-filter: blur(15px);
 	border-top-left-radius: 28px;
@@ -227,8 +216,78 @@ h2 span{
 footer, footer a{
 	font-size: 12px;
 }
-
-@media (max-width: 1400px){
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.rounded{ /* переопределил класс бутстрапа */
+	border-radius: 11px !important;
+}
+.px-6{ /* дополнил бутстрап */
+	padding-left: 4rem !important;
+	padding-right: 4rem !important;
+}
+.tower{
+	position: relative;
+}
+@keyframes towerlight {
+    0% {opacity: 0.7}
+    50% {opacity: 0}
+    100% {opacity: 0.7}
+}
+.tower::after, .tower::before{
+	content: "";
+	position: absolute;
+	animation: 4s towerlight infinite ease;
+	overflow: hidden;
+	z-index: 1;
+	width: 300px;
+	height: 300px;
+	opacity: 0.4;
+	filter: blur(250px);
+}
+.metamarket .tower::after{
+	top: 0;
+	left: 25%;
+	background-color: rgba(0, 226, 63, 0.4);
+}
+.metamarket .tower::before{
+	bottom: 0;
+	right: 25%;
+	background-color: rgba(226, 0, 198, 0.4);
+	animation-duration: 2s;
+}
+.launch .tower::after{
+	top: 0;
+	right: 25%;
+	background-color: rgba(0, 213, 226, 0.4);
+}
+.launch .tower::before{
+	bottom: 0;
+	right: 25%;
+	background-color: rgba(226, 0, 198, 0.4);
+	animation-duration: 2s;
+}
+.crowd .tower::after{
+	top: 0;
+	right: 25%;
+	background-color: rgba(233, 77, 16, 1);
+}
+.estate .tower::after{
+	top: 0;
+	right: 0;
+	background-color: rgba(181, 266, 0, 0.7);
+}
+.school .tower::after{
+	top: 0;
+	right: 25%;
+	background-color: rgba(214, 0, 226, 0.9);
+}
+/*@media (max-width: 1400px){
 	.sources .window::before{
 		display: none;
 	}
@@ -241,115 +300,9 @@ footer, footer a{
 	.sources .row::after{
 		display: none;
 	}
-}
-
+}*/
 @media (max-width: 992px){
 	nav a{
 		border-right: none;
 	}
 }
-
-@media (max-width: 576px){
-	.brlg{
-		display: none;
-	}
-}
-
-/*video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-	height: 100%;
-	object-fit: cover;
-}*/
-
-
-/*Переопределение стилей bootstrap*/
-.rounded{
-	border-radius: 11px !important;
-}
-
-
-/*Дополнение)*/
-.px-6{
-	padding-left: 4rem !important;
-	padding-right: 4rem !important;
-}
-.py-6{
-	padding-top: 4rem !important;
-	padding-bottom: 4rem !important;
-}
-
-/*Подсветка башень анимированная*/
-.tower img{
-	position: relative;
-}
-.tower{
-	position: relative;
-}
-.tower img{
-	object-fit: contain;
-	object-position: center center;
-	height: 100%;
-	max-height: 100%;
-}
-@keyframes towerlight {
-    0% {opacity: 25%;}
-    50% {opacity: 0%;}
-    100% {opacity: 25%;}
-}
-.tower::after, .tower::before{
-	position: absolute;
-	animation: 3s towerlight infinite ease;
-	overflow: hidden;
-	z-index: 1;
-}
-section{
-	overflow-x: hidden;
-}
-.metamarket .tower::after{
-	content: url(../img/towerlight_metamarket1.svg);
-	bottom: 0;
-	right: 0;
-}
-.metamarket .tower::before{
-	content: url(../img/towerlight_metamarket2.svg);
-	bottom: -50%;
-	right: 0;
-	animation-duration: 1.5s;
-	width: 100px;
-}
-.launch .tower::after{
-	content: url(../img/towerlight_metamarket2.svg);
-	bottom: 0;
-	left: 0;
-	width: 100px;
-}
-.launch .tower::before{
-	content: url(../img/towerlight_launch2.svg);
-	bottom: 15%;
-	left: 0;
-	animation-duration: 1.5s;
-}
-.crowd .tower::after{
-	content: url(../img/towerlight_crowd.svg);
-	bottom: 0;
-	right: 0;
-}
-.estate .tower::after{
-	content: url(../img/towerlight_estate.svg);
-	top: 0;
-	right: 0;
-}
-.school .tower::after{
-	content: url(../img/towerlight_metamarket2.svg);
-	bottom: 0;
-	right: 0;
-}
-body{
-	overflow-x: hidden !important;
-}
-/*section{
-	overflow-x: hidden !important;
-}*/
