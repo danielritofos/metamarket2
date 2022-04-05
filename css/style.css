@@ -97,10 +97,13 @@ h2 span{
 	display: inline-block;
 	width: 50px;
 }
+.school .list > div span{
+	left: 9px;
+}
 .list > div span::before{
 	position: absolute;
 	left: -9px;
-	bottom: -18px;
+	bottom: -12px;
 	z-index: -1;
 }
 .launch .list > div:nth-child(1) span::before{
@@ -114,9 +117,11 @@ h2 span{
 }
 .estate .list > div:nth-child(1) span::before{
 	content: url("../img/li11.svg");
+	left: 9px !important;
 }
 .estate .list > div:nth-child(2) span::before{
 	content: url("../img/li12.svg");
+	left: 9px !important;
 }
 .school .list > div:nth-child(1) span::before{
 	content: url("../img/li21.svg");
