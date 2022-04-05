@@ -313,11 +313,13 @@ section{
 	bottom: -50%;
 	right: 0;
 	animation-duration: 1.5s;
+	width: 100px;
 }
 .launch .tower::after{
 	content: url(../img/towerlight_metamarket2.svg);
 	top: 0;
 	left: 0;
+	width: 100px;
 }
 .launch .tower::before{
 	content: url(../img/towerlight_launch2.svg);
