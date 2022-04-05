@@ -317,7 +317,7 @@ section{
 }
 .launch .tower::after{
 	content: url(../img/towerlight_metamarket2.svg);
-	top: 0;
+	bottom: 0;
 	left: 0;
 	width: 100px;
 }
