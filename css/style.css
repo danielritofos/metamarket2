@@ -89,32 +89,18 @@ h2 span{
 	background: radial-gradient(152.2% 256.6% at -5.92% 107.49%, rgba(127, 127, 127, 0.41) 0%, rgba(127, 127, 127, 0) 88.46%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
 	backdrop-filter: blur(11px);
 }
-.welcome .window::before{
-	content: "";
-	position: absolute;
-	top: -27px;
-	left: 54px;
-	background-color: #010101;
-	border-radius: 11px;
-	border: 1px solid rgb(127, 127, 127);
-
-	width: 178px;
-	height: 56px;
-}
 .welcome .window::after{
 	content: 'Airdrop';
 	color: #B5E200;
 	text-transform: uppercase;
 	font-family: 'Gamero';
 	position: absolute;
-	font-size: 36px;
-	line-height: 0px;
-	top: -0px;
-	left: 54px;
-	background-color: #010101;
-	padding: 0 18px;
-	width: 180px;
-	height: 36px;
+	font-size: 18px;
+	line-height: 18px;
+	top: 8px;
+	width: 100px;
+	text-align: center;
+	left: calc(50% - 50px)
 }
 .list > div span{
 	font-family: 'Gamero';
@@ -221,11 +207,21 @@ h2 span{
 	position: relative;
 }
 .finish::before{
-	content: url("../img/finishairdrop.svg");
-	top: -66px;
-	left: 10%;
+	content: "Airdrop";
 	position: absolute;
+	text-transform: uppercase;
+	font-family: "Gamero";
+	color: #00E23F;
+
+	background: radial-gradient(152.2% 256.6% at -5.92% 107.49%, rgba(127, 127, 127, 0.41) 0%, rgba(127, 127, 127, 0) 88.46%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+	backdrop-filter: blur(15px);
+	border-top-left-radius: 28px;
+	border-top-right-radius: 28px;
+	top: -46px;
+	left: 4%;
 	z-index: -1;
+	padding: 10px 60px;
+	border: 2px solid #656565;
 }
 footer, footer a{
 	font-size: 12px;
