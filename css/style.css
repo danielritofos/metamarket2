@@ -149,12 +149,14 @@ h2 span{
 .stock h2 span, .sources h2 span{
 	font-family: "Nunito", sans-serif;
 }
-.sources .window::before{
+.sources .window span{
+	width: 60px;
+}
+/*.sources .window::before{
 	content: url("../img/vector.svg");
 	position: absolute;
 	top: -77px;
 	left: 50%;
-	/*height: 60px;*/
 	width: 1px;
 }
 .sources .window::after{
@@ -162,7 +164,6 @@ h2 span{
 	position: absolute;
 	bottom: -28px;
 	left: 50%;
-	/*height: 60px;*/
 	width: 1px;
 }
 .sources .sources-row{
@@ -185,7 +186,7 @@ h2 span{
 	width: 75%;
 	height: 0;
 	border-bottom: 2px solid #D600E2;
-}
+}*/
 
 .map::-webkit-scrollbar {
 	background-color: #B5E299;
@@ -274,6 +275,10 @@ footer, footer a{
 .px-6{
 	padding-left: 4rem !important;
 	padding-right: 4rem !important;
+}
+.py-6{
+	padding-top: 4rem !important;
+	padding-bottom: 4rem !important;
 }
 
 /*Подсветка башень анимированная*/
