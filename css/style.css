@@ -50,9 +50,10 @@ h2, h3, h4{
 	font-style: italic;
 	text-transform: uppercase;
 }
-h2 span{
+h2 span, h4 span{
 	font-family: "Gamero";
 	white-space: nowrap;
+	font-style: normal;
 }
 .description{
 	font-size: 24px;
@@ -78,7 +79,7 @@ h2 span{
 	background: radial-gradient(152.2% 256.6% at -5.92% 107.49%, rgba(127, 127, 127, 0.41) 0%, rgba(127, 127, 127, 0) 88.46%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
 	backdrop-filter: blur(11px);
 }
-.welcome .window::after{
+/*.welcome .window::after{
 	content: 'Airdrop';
 	color: #B5E200;
 	text-transform: uppercase;
@@ -86,11 +87,11 @@ h2 span{
 	position: absolute;
 	font-size: 18px;
 	line-height: 18px;
-	top: 8px;
+	top: -20px;
 	width: 100px;
 	text-align: center;
 	left: calc(50% - 50px)
-}
+}*/
 .list > div span{
 	font-family: 'Gamero';
 	position: relative;
