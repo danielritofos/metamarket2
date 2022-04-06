@@ -34,6 +34,22 @@ video{
 	height: 100%;
 	object-fit: cover;
 }
+@media (max-width: 640px){
+	.first-video{
+		display: block;
+	}
+	.second-video{
+		display: none;
+	}
+}
+@media (min-width: 641px){
+	.first-video{
+		display: none;
+	}
+	.second-video{
+		display: block;
+	}
+}
 nav{
 	background: radial-gradient(152.2% 256.6% at -5.92% 107.49%, rgba(127, 127, 127, 0.41) 0%, rgba(127, 127, 127, 0) 88.46%);
 	backdrop-filter: blur(15px);
