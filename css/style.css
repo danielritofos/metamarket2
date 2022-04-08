@@ -16,6 +16,7 @@ body{
 	font-family: "Nunito", sans-serif;
 	font-weight: 300;
 	background-color: #010101;
+	line-height: 1.2;
 }
 .first{
 	background-image: url(../img/first.jpg);
@@ -122,13 +123,16 @@ h2 span, h4 span{
 	display: inline-block;
 	width: 50px;
 }
+.list > div p{
+	margin-top: 18px;
+}
 .school .list > div span{
 	left: 9px;
 }
 .list > div span::before{
 	position: absolute;
 	left: -9px;
-	bottom: -12px;
+	bottom: -18px;
 	z-index: -1;
 }
 .launch .list > div:nth-child(1) span::before{
@@ -142,11 +146,9 @@ h2 span, h4 span{
 }
 .estate .list > div:nth-child(1) span::before{
 	content: url("../img/li11.svg");
-	left: 9px !important;
 }
 .estate .list > div:nth-child(2) span::before{
 	content: url("../img/li12.svg");
-	left: 9px !important;
 }
 .school .list > div:nth-child(1) span::before{
 	content: url("../img/li21.svg");
