@@ -57,6 +57,7 @@ nav{
 	backdrop-filter: blur(15px);
 	border-radius: 16px;
 	padding: 30px 0;
+	z-index: 1;
 }
 a{
 	color: #ffffff;
