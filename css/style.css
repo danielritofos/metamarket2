@@ -376,3 +376,8 @@ canvas{
 	width: 100%;
 	z-index: -2;
 }
+.canvas-blur{
+	z-index: -1;
+	backdrop-filter: blur(9px);
+	-webkit-backdrop-filter: blur(9px);
+}
