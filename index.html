@@ -31,7 +31,7 @@
 	</div>
 	<section class="welcome py-6">
 		<canvas id="canvas"></canvas>
-		<div id="canvas-blur"></div>
+		<div id="canvas-blur"></div> <!-- убрал фильтр фигурам и добавил прослойку с backdrop-filter в css, чтоб можно было добавить префикс для 'webkit', чтоб на айфонах размытие было, также на скорость работы повлияло положительно -->
 		<h2 class="text-center">Добро пожаловать в <span style="color: #D600E2">WooQ</span></h2>
 		<p class="description text-center mt-3">WooQ для тех, кто желает инвестировать <br class="brlg">в новые технологии и проекты, а так же <br class="brlg">работать с  профессиональной командой</p>
 		<div class="window text-center container mt-5 py-5 rounded">
@@ -43,8 +43,8 @@
 	<section class="metamarket py-6">
 		<div class="container">
 			<div class="row flex-lg-row-reverse">
-				<div class="d-none d-sm-block col-12 col-lg-5 tower">
-					<img class="img-fluid" src="img/tower.png" alt="">
+				<div class="col-12 col-lg-5 tower">
+					<img class="img-fluid d-block mx-auto" src="img/tower1.png" alt="">
 				</div>
 				<div class="col-12 col-lg-7">
 					<h2>Покупайте и выгодно продавайте NFT на <span style="color: #00E23F">MetaMArket WooQ</span></h2>
@@ -420,7 +420,7 @@
 		    ctx.fillStyle = c;
 		    ctx.arc(x, y, r, 0, 2*Math.PI, false);
 		    ctx.fill();
-		    ctx.filter = "blur(9px)";
+		    // ctx.filter = "blur(9px)"; // убрал фильтр фигурам и добавил прослойку с backdrop-filter в css, чтоб можно было добавить префикс для 'webkit', чтоб на айфонах размытие было, на скорость работы повлияло положительно
 		    ctx.closePath();
 		};
 
