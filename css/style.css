@@ -15,7 +15,7 @@ body{
 	color: #ffffff;
 	font-family: "Nunito", sans-serif;
 	font-weight: 300;
-	background-color: #010101;
+	background-color: #0C091D !important;
 	line-height: 1.2;
 }
 .first{
@@ -105,6 +105,13 @@ h2 span, h4 span{
 .window-leftlight{
 	background: radial-gradient(152.2% 256.6% at -5.92% 107.49%, rgba(127, 127, 127, 0.41) 0%, rgba(127, 127, 127, 0) 88.46%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
 	backdrop-filter: blur(11px);
+}
+.welcome{
+	/*background-image: url("../img/welcome_background.svg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;*/
+	position: relative;
 }
 /*.welcome .window::after{
 	content: 'Airdrop';
@@ -349,4 +356,22 @@ footer, footer a{
 .py-6{
 	padding-top: 5rem !important;
 	padding-bottom: 5rem !important;
+}
+
+
+html, body {
+  height: 100%;
+}
+body {
+  background: black;
+  min-height: 100%;
+}
+
+canvas{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
 }
