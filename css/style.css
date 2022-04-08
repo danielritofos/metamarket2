@@ -55,6 +55,7 @@ video{
 nav{
 	background: radial-gradient(152.2% 256.6% at -5.92% 107.49%, rgba(127, 127, 127, 0.41) 0%, rgba(127, 127, 127, 0) 88.46%);
 	backdrop-filter: blur(15px);
+	-webkit-backdrop-filter: blur(15px);
 	border-radius: 16px;
 	padding: 30px 0;
 	z-index: 1;
@@ -89,22 +90,27 @@ h2 span, h4 span{
 	color: #ffffff;
 	background: linear-gradient(130.39deg, rgba(186, 187, 180, 0.63) -6.69%, #BABBB4 -6.68%, rgba(20, 20, 20, 0.04) 53.64%, #E2DAE2 102.69%);
 	backdrop-filter: blur(11px);
+	-webkit-backdrop-filter: blur(11px);
+
 }
 .btn:hover{
 	color: #ffffff;
 	background: linear-gradient(130.39deg, rgba(181, 226, 0, 0.63) -6.69%, #B5E200 -6.68%, rgba(20, 20, 20, 0.04) 53.64%, #D600E2 102.69%);
 	backdrop-filter: blur(11px);
+	-webkit-backdrop-filter: blur(11px);
 }
 .window{
 	background: linear-gradient(104.3deg, rgba(163, 163, 163, 0) 15.4%, rgba(254, 255, 249, 0.2) 100.92%);
 	border: 1px solid #7F7F7F;
 	box-sizing: border-box;
 	backdrop-filter: blur(94px);
+	-webkit-backdrop-filter: blur(94px);
 	position: relative;
 }
 .window-leftlight{
 	background: radial-gradient(152.2% 256.6% at -5.92% 107.49%, rgba(127, 127, 127, 0.41) 0%, rgba(127, 127, 127, 0) 88.46%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
 	backdrop-filter: blur(11px);
+	-webkit-backdrop-filter: blur(11px);
 }
 .welcome{
 	/*background-image: url("../img/welcome_background.svg");
@@ -244,6 +250,7 @@ h2 span, h4 span{
 	color: #00E23F;
 	background: radial-gradient(152.2% 256.6% at -5.92% 107.49%, rgba(127, 127, 127, 0.41) 0%, rgba(127, 127, 127, 0) 88.46%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
 	backdrop-filter: blur(15px);
+	-webkit-backdrop-filter: blur(15px);
 	border-top-left-radius: 28px;
 	border-top-right-radius: 28px;
 	top: -46px;
@@ -280,6 +287,7 @@ footer, footer a{
 	height: 300px;
 	opacity: 0.4;
 	filter: blur(250px);
+	-webkit-filter: blur(250px);
 }
 .metamarket .tower::after{
 	top: 0;
@@ -377,6 +385,12 @@ canvas{
 	z-index: -2;
 }
 #canvas-blur{
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(255, 255, 255, .0);
 	z-index: -1;
 	backdrop-filter: blur(9px);
 	-webkit-backdrop-filter: blur(9px);
