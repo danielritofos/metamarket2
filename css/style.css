@@ -178,41 +178,37 @@ h2 span, h4 span{
 .sources .window span{
 	width: 60px;
 }
-/*.sources .window::before{
-	content: url("../img/vector.svg");
-	position: absolute;
-	top: -77px;
-	left: 50%;
-	width: 1px;
+.sources .sources-row > div{
+	padding-bottom: 54px !important;
+}
+.sources .container > p{
+	margin-top: 100px !important;
 }
 .sources .window::after{
-	content: url("../img/vector2.svg");
+	content: url("../img/vector.svg");
 	position: absolute;
-	bottom: -28px;
+	bottom: -82px;
 	left: 50%;
 	width: 1px;
 }
 .sources .sources-row{
 	position: relative;
 }
-.sources .sources-row::before{
+.sources .row::before{
 	content: '';
 	position: absolute;
-	top: -72px;
-	left: calc(12.5% + 5px);
-	width: 75%;
-	height: 0;
-	border-top: 2px solid #D600E2;
-}
-.sources .row::after{
-	content: '';
-	position: absolute;
-	bottom: -16px;
+	bottom: -22px;
 	left: calc(12.5% + 5px);
 	width: 75%;
 	height: 0;
 	border-bottom: 2px solid #D600E2;
-}*/
+}
+.sources .row::after{
+	content: url("../img/vector.svg");
+	position: absolute;
+	bottom: -103px;
+	left: calc(50% - 1px);
+}
 .map::-webkit-scrollbar {
 	background-color: #B5E299;
 }
@@ -331,6 +327,22 @@ footer, footer a{
 @media (max-width: 992px){
 	nav a{
 		border-right: none;
+	}
+
+	.sources .row::before{
+		display: none;
+	}
+	.sources .row::after{
+		display: none;
+	}
+	.sources .window::after{
+		display: none;
+	}
+	.sources .sources-row > div{
+		padding-bottom: initial !important;
+	}
+	.sources .container > p{
+		margin-top: initial !important;
 	}
 }
 
