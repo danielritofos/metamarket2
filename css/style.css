@@ -122,6 +122,9 @@ h2 span, h4 span{
 	font-family: 'Gamero';
 	position: relative;
 	display: inline-block;
+}
+.list > div span img{
+	height: 40px;
 	width: 40px;
 }
 .list > div p{
