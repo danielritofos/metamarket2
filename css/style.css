@@ -26,8 +26,8 @@ body{
 nav{
 	z-index: 1;
 	background: radial-gradient(152.2% 256.6% at -5.92% 107.49%, rgba(127, 127, 127, 0.41) 0%, rgba(127, 127, 127, 0) 88.46%);
-	backdrop-filter: blur(15px);
 	-webkit-backdrop-filter: blur(15px);
+	backdrop-filter: blur(15px);
 }
 video{
     position: absolute;
@@ -76,49 +76,32 @@ h2 span, h4 span{
 .btn{
 	color: #ffffff;
 	background: linear-gradient(130.39deg, rgba(186, 187, 180, 0.63) -6.69%, #BABBB4 -6.68%, rgba(20, 20, 20, 0.04) 53.64%, #E2DAE2 102.69%);
-	backdrop-filter: blur(11px);
 	-webkit-backdrop-filter: blur(11px);
-
+	backdrop-filter: blur(11px);
 }
 .btn:hover{
 	color: #ffffff;
 	background: linear-gradient(130.39deg, rgba(181, 226, 0, 0.63) -6.69%, #B5E200 -6.68%, rgba(20, 20, 20, 0.04) 53.64%, #D600E2 102.69%);
-	backdrop-filter: blur(11px);
 	-webkit-backdrop-filter: blur(11px);
+	backdrop-filter: blur(11px);
 }
 .window{
 	background: linear-gradient(104.3deg, rgba(163, 163, 163, 0) 15.4%, rgba(254, 255, 249, 0.2) 100.92%);
 	border: 1px solid #7F7F7F;
 	box-sizing: border-box;
-	backdrop-filter: blur(94px);
 	-webkit-backdrop-filter: blur(94px);
+	backdrop-filter: blur(94px);
 	position: relative;
+	z-index: 2;
 }
 .window-leftlight{
 	background: radial-gradient(152.2% 256.6% at -5.92% 107.49%, rgba(127, 127, 127, 0.41) 0%, rgba(127, 127, 127, 0) 88.46%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-	backdrop-filter: blur(11px);
 	-webkit-backdrop-filter: blur(11px);
+	backdrop-filter: blur(11px);
 }
 .welcome{
-	/*background-image: url("../img/welcomedec.png");
-	background-size: contain;
-	background-position: bottom center;
-	background-repeat: no-repeat;*/
 	position: relative;
 }
-/*.welcome .window::after{
-	content: 'Airdrop';
-	color: #B5E200;
-	text-transform: uppercase;
-	font-family: 'Gamero';
-	position: absolute;
-	font-size: 18px;
-	line-height: 18px;
-	top: -20px;
-	width: 100px;
-	text-align: center;
-	left: calc(50% - 50px)
-}*/
 .parallax{
 	position: absolute;
 	top: 0;
@@ -250,9 +233,9 @@ h2 span, h4 span{
 	text-transform: uppercase;
 	font-family: "Gamero";
 	color: #00E23F;
-	background: radial-gradient(152.2% 256.6% at -5.92% 107.49%, rgba(127, 127, 127, 0.41) 0%, rgba(127, 127, 127, 0) 88.46%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-	backdrop-filter: blur(15px);
+	background: radial-gradient(152.2% 256.6% at -5.92% 107.49%, rgba(127, 127, 127, 0.41) 0%, rgba(127, 127, 127, 0) 88.46%);
 	-webkit-backdrop-filter: blur(15px);
+	backdrop-filter: blur(15px);	
 	border-top-left-radius: 28px;
 	border-top-right-radius: 28px;
 	top: -46px;
@@ -267,7 +250,7 @@ footer, footer a{
 .rounded{ /* переопределил класс бутстрапа */
 	border-radius: 11px !important;
 }
-.px-6{ /* дополнил бутстрап */
+.px-6{ /* дополнил бутстрап)) */
 	padding-left: 4rem !important;
 	padding-right: 4rem !important;
 }
@@ -366,7 +349,7 @@ footer, footer a{
 }
 
 
-html, body {
+/*html, body {
   height: 100%;
 }
 body {
@@ -392,4 +375,4 @@ canvas{
 	z-index: -1;
 	backdrop-filter: blur(9px);
 	-webkit-backdrop-filter: blur(9px);
-}
+}*/
