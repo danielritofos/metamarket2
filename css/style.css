@@ -122,7 +122,7 @@ h2 span, h4 span{
 	font-family: 'Gamero';
 	position: relative;
 	display: inline-block;
-	/*width: 40px;*/
+	width: 40px;
 }
 .list > div p{
 	margin-top: 18px;
