@@ -1,13 +1,13 @@
 <svg width="305" height="509" viewBox="0 0 305 509" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_b_542_2265)">
+<g>
 <circle cx="263" cy="18.0215" r="18" fill="url(#paint0_radial_542_2265)"/>
 <circle cx="263" cy="18.0215" r="17" stroke="url(#paint1_linear_542_2265)" stroke-width="2"/>
 </g>
-<g filter="url(#filter1_b_542_2265)">
+<g>
 <rect x="304.219" y="369.613" width="42.1679" height="42.1679" rx="5" transform="rotate(141.773 304.219 369.613)" fill="url(#paint2_radial_542_2265)"/>
 <rect x="302.814" y="369.447" width="40.1679" height="40.1679" rx="4" transform="rotate(141.773 302.814 369.447)" stroke="url(#paint3_linear_542_2265)" stroke-width="2"/>
 </g>
-<g filter="url(#filter2_b_542_2265)">
+<g>
 <path d="M26.7404 452.858C26.5894 449.767 29.8559 447.683 32.5959 449.122L76.1732 472.015C78.8922 473.444 79.0537 477.276 76.4645 478.928L35.2879 505.202C32.6987 506.854 29.2908 505.092 29.1411 502.025L26.7404 452.858Z" fill="url(#paint4_radial_542_2265)"/>
 <path d="M32.1308 450.008L75.7082 472.901C77.7474 473.972 77.8685 476.846 75.9266 478.085L34.75 504.359C32.8081 505.598 30.2522 504.277 30.1399 501.976L27.7392 452.81C27.626 450.491 30.0758 448.928 32.1308 450.008Z" stroke="url(#paint5_linear_542_2265)" stroke-width="2"/>
 </g>
