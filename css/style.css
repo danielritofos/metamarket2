@@ -19,16 +19,14 @@ body{
 	line-height: 1.2;
 }
 .first{
-	/*background-image: url(../img/first.jpg);*/
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
 	height: 100vh;
 	position: relative;
-	padding: 0;
 }
-.first .container{
+nav{
 	z-index: 1;
+	background: radial-gradient(152.2% 256.6% at -5.92% 107.49%, rgba(127, 127, 127, 0.41) 0%, rgba(127, 127, 127, 0) 88.46%);
+	backdrop-filter: blur(15px);
+	-webkit-backdrop-filter: blur(15px);
 }
 video{
     position: absolute;
@@ -55,27 +53,12 @@ video{
 		display: block;
 	}
 }
-nav{
-	background: radial-gradient(152.2% 256.6% at -5.92% 107.49%, rgba(127, 127, 127, 0.41) 0%, rgba(127, 127, 127, 0) 88.46%);
-	backdrop-filter: blur(15px);
-	-webkit-backdrop-filter: blur(15px);
-	border-radius: 16px;
-	padding: 30px 0;
-	z-index: 1;
-}
 a{
 	color: #ffffff;
 	text-decoration: none;
 }
-nav a{
-	border-right: 1px solid #ffffff;
-	padding: 0px 30px;
-}
-nav a:last-child{
-	border-right: none;
-}
 a:not(.btn):hover{
-	color: #B5E200;
+	color: #B5E200 !important;
 }
 h2, h3, h4{
 	font-style: italic;
@@ -116,7 +99,7 @@ h2 span, h4 span{
 	-webkit-backdrop-filter: blur(11px);
 }
 .welcome{
-	/*background-image: url("../img/welcome_background.svg");
+	/*background-image: url("../img/welcome.svg");
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;*/
@@ -135,6 +118,22 @@ h2 span, h4 span{
 	text-align: center;
 	left: calc(50% - 50px)
 }*/
+.parallax{
+	position: absolute;
+	top: 0;
+	left: 20%;
+	width: 60%;
+	height: 100%;
+	object-size: contain;
+}
+.welcome .parallax{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
 .list > div span{
 	font-family: 'Gamero';
 	position: relative;
@@ -344,10 +343,6 @@ footer, footer a{
 	}
 }*/
 @media (max-width: 992px){
-	nav a{
-		border-right: none;
-	}
-
 	.sources .row::before{
 		display: none;
 	}
