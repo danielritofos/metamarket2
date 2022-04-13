@@ -1,5 +1,6 @@
 <svg width="32" height="35" viewBox="0 0 32 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_b_401_2308)">
+<g>
+	<!-- filter="url(#filter0_b_401_2308)" -->
 <rect x="32" y="34.2461" width="32" height="34" rx="5" transform="rotate(-180 32 34.2461)" fill="url(#paint0_radial_401_2308)"/>
 <rect x="31" y="33.2461" width="30" height="32" rx="4" transform="rotate(-180 31 33.2461)" stroke="url(#paint1_linear_401_2308)" stroke-width="2"/>
 </g>
