@@ -99,10 +99,10 @@ h2 span, h4 span{
 	-webkit-backdrop-filter: blur(11px);
 }
 .welcome{
-	/*background-image: url("../img/welcome.svg");
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;*/
+	background-image: url("../img/welcomedec.png");
+	background-size: contain;
+	background-position: bottom center;
+	background-repeat: no-repeat;
 	position: relative;
 }
 /*.welcome .window::after{
@@ -127,12 +127,10 @@ h2 span, h4 span{
 	object-size: contain;
 }
 .welcome .parallax{
-	position: absolute;
-	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
+	object-fit: contain;
 }
 .list > div span{
 	font-family: 'Gamero';
