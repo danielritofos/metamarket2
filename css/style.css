@@ -276,6 +276,7 @@ footer, footer a{
 	overflow: hidden;
 	z-index: 1;
 	width: 300px;
+	max-width: 75%;
 	height: 300px;
 	opacity: 0.4;
 	filter: blur(250px);
