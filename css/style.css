@@ -114,9 +114,8 @@ h2 span, h4 span{
 	left: 0;
 	top: 0;
 	width: 100vw;
-	max-width: 100vw;
 	height: 100%;
-	overflow: hidden !important;
+	overflow: hidden;
 }
 .list > div span{
 	font-family: 'Gamero';
@@ -125,7 +124,7 @@ h2 span, h4 span{
 }
 .list > div span img{
 	height: 40px !important;
-	width: 40px !important;
+	/*width: 40px !important;*/
 }
 .list > div p{
 	margin-top: 18px;
