@@ -253,6 +253,7 @@ h2 span, h4 span{
 	z-index: -1;
 	padding: 10px 60px;
 	border: 2px solid #656565;
+	border-bottom: none;
 }
 .welcome .window::before{
 	color: #B5E200;
