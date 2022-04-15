@@ -129,7 +129,9 @@ h2 span, h4 span{
 .list > div p{
 	margin-top: 18px;
 }
-.school .list > div span{
+.school .list > div span,
+.estate .list > div span,
+.launch .list > div span{
 	left: 9px;
 }
 .list > div span::before{
@@ -218,6 +220,10 @@ h2 span, h4 span{
     background-color: rgba(0, 0, 0, .2);
     border-radius: 6px;
 }
+.map{
+	scrollbar-color: #458245 #714826;     /* «цвет ползунка» «цвет полосы скроллбара» */
+    scrollbar-width: auto | thin | none;  /* толщина */
+}
 .map > div{
 	position: relative;
 }
@@ -230,6 +236,7 @@ h2 span, h4 span{
 .finish{
 	position: relative;
 }
+.welcome .window::before,
 .finish::before{
 	content: "Airdrop";
 	position: absolute;
@@ -246,6 +253,9 @@ h2 span, h4 span{
 	z-index: -1;
 	padding: 10px 60px;
 	border: 2px solid #656565;
+}
+.welcome .window::before{
+	color: #B5E200;
 }
 footer, footer a{
 	font-size: 12px;
@@ -350,31 +360,3 @@ footer, footer a{
 		margin-top: 36px !important;
 	}
 }
-
-/*html, body {
-  height: 100%;
-}
-body {
-  background: black;
-  min-height: 100%;
-}
-
-canvas{
-	position: fixed;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	z-index: -2;
-}
-#canvas-blur{
-	height: 100%;
-	width: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	background-color: rgba(255, 255, 255, .0);
-	z-index: -1;
-	backdrop-filter: blur(9px);
-	-webkit-backdrop-filter: blur(9px);
-}*/
