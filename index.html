@@ -388,7 +388,9 @@
 	<script src="js/simpleParallax.min.js"></script>
 	<script>
 		new simpleParallax(document.querySelectorAll(".parallax"));
-		new simpleParallax(document.querySelector(".welcomeparallax"));
+		new simpleParallax(document.querySelector(".welcomeparallax"), {
+			orientation: "down"
+		});
 	</script>
 </body>
 </html>

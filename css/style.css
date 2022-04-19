@@ -130,7 +130,7 @@ h2 span, h4 span{
 	top: 0;
 	left: 0;
 	height: 100%;
-	overflow-x: hidden;
+	overflow: hidden;
 }
 .list > div span{
 	font-family: 'Gamero';
