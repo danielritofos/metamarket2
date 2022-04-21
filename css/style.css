@@ -99,39 +99,6 @@ h2 span, h4 span{
 	-webkit-backdrop-filter: blur(11px);
 	backdrop-filter: blur(11px);
 }
-.welcome{
-	position: relative;
-}
-.parallax{
-	position: absolute;
-	top: 0;
-	left: 15%;
-	width: 70%;
-	height: 100%;
-}
-.welcomeparallax{
-	position: absolute;
-	left: 0;
-	top: 0;
-	/*width: 100%;*/
-	width: 100vw;
-	height: 100%;
-
-	
-	/*background-image: url("../img/welcome.png");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;*/
-}
-.welcomeparallax_wrapper{
-	max-width: 100vw;
-	width: 100vw;
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	overflow: hidden;
-}
 .list > div span{
 	font-family: 'Gamero';
 	position: relative;
