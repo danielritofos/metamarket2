@@ -15,7 +15,8 @@ body{
 	color: #ffffff;
 	font-family: "Nunito", sans-serif;
 	font-weight: 300;
-	background-color: #0C091D !important;
+	/*background-color: #0C091D !important;*/
+	background-color: #010101;
 	line-height: 1.2;
 	overflow-x: hidden;
 }
@@ -164,38 +165,10 @@ h2 span, h4 span{
 	width: 60px;
 	font-family: "Gamero";
 }
-.sources .sources-row > div{
-	padding-bottom: 54px !important;
-}
-.sources .container > p{
-	margin-top: 100px !important;
-}
-.sources .window::after{
-	content: url("../img/vector.svg");
-	position: absolute;
-	bottom: -82px;
-	left: 50%;
-	width: 1px;
-}
 .sources .sources-row{
 	position: relative;
 }
-.sources .row::before{
-	content: '';
-	position: absolute;
-	bottom: -22px;
-	left: calc(12.5% + 5px);
-	width: 75%;
-	height: 0;
-	border-bottom: 2px solid #D600E2;
-}
-.sources .row::after{
-	content: url("../img/vector.svg");
-	position: absolute;
-	bottom: -103px;
-	left: calc(50% - 1px);
-}
-.map::-webkit-scrollbar {
+/*.map::-webkit-scrollbar {
 	background-color: #B5E299;
 }
 .map::-webkit-scrollbar-thumb {
@@ -203,18 +176,49 @@ h2 span, h4 span{
     border-radius: 6px;
 }
 .map{
-	scrollbar-color: #458245 #714826;     /* «цвет ползунка» «цвет полосы скроллбара» */
-    scrollbar-width: auto | thin | none;  /* толщина */
-}
-.map > div{
+	scrollbar-color: #458245 #714826;
+    scrollbar-width: auto | thin | none;
+}*/
+
+		
+.map > div > div{
 	position: relative;
 }
-.map > div::after{
+.map > div > div::after{
 	content: url(../img/maparrow.svg);
 	position: absolute;
-	top: calc(50% - 15px);
-	right: 8px;
+	top: calc(50% - 27px);
+	right: 14px;
 }
+.map > div > div:last-child::after{
+	display: none;
+}
+
+
+.map2{
+	padding-right: 100px;
+}
+.wrapper{
+	overflow-x: visible;
+	animation: translation 30s linear infinite;
+}
+
+@keyframes translation{
+	0%{
+		transform: translateX(140%);
+	}
+	33%{
+		transform: translateX(0%);
+	}
+	100%{
+		transform: translateX(-280%);
+	}
+}
+
+
+
+
+
 .finish{
 	position: relative;
 }
