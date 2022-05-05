@@ -207,17 +207,10 @@ h2 span, h4 span{
 	0%{
 		transform: translateX(140%);
 	}
-	33%{
-		transform: translateX(0%);
-	}
 	100%{
-		transform: translateX(-280%);
+		transform: translateX(-800%);
 	}
 }
-
-
-
-
 
 .finish{
 	position: relative;
